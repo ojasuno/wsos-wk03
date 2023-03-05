@@ -1,11 +1,10 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::entrypoint::ProgramResult;
 
-declare_id!("CmxUm2c1EPXSRx7uuSX2kU6G5pcduHo2MC8QJS1kyDGr");
+declare_id!("CiuFWGhGHgGm2LS6csbQmfEsxaSTLxHNL9Fh6D6eriTQ");
 
 #[program]
-pub mod calculator {
-    // use crate::instruction::{Substract, Multiply};
+pub mod wsos_wk03 {
 
     use super::*;
 
