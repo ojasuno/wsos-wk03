@@ -10,13 +10,13 @@ describe("calculator", () => {
   anchor.setProvider(anchor.AnchorProvider.env());
 
   //Referencing the program - Abstraction that allows us to call methods of our SOL program.
-  const program = anchor.workspace.Calculator as Program<WsosWk03>;
+  const program = anchor.workspace.WsosWk03 as Program<WsosWk03>;
   const programProvider = program.provider as anchor.AnchorProvider;
 
   //Generating a keypair for our Calculator account
   const calculatorPair = anchor.web3.Keypair.generate();
 
-  const text = "Summer School Of Solana"
+  const text = "Winter School Of Solana"
 
   //Creating a test block
   it("Creating Calculator Instance", async () => {
