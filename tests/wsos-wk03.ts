@@ -69,13 +69,13 @@ describe("calculator", () => {
 
   //Another test step - test out substract
   it('Division',async () => {
-    await program.methods.divide(new anchor.BN(2), new anchor.BN(3))
+    await program.methods.divide(new anchor.BN(8), new anchor.BN(4))
     .accounts({
         calculator: calculatorPair.publicKey,
     })
     .rpc()
     const account = await program.account.calculator.fetch(calculatorPair.publicKey)
-    expect(account.result).to.eql(new anchor.BN(6))
+    expect(account.result).to.eql(new anchor.BN(2))
   })
 
 });
